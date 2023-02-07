@@ -1,21 +1,30 @@
-
-
-<div class="d-grid mt-2 mb-2 p-2">
-  <button class="btn btn-outline-secondary" (click)="cargar()" type="button">Cargar nuevas fotos</button>
-</div>
-
-<div class="text-center" *ngIf="loading">
-  <div class="loader">Loading...</div>
-</div>
-
-<div class="masonry-container contenedor" *ngIf="!loading">
-  <img *ngFor="let photo of photos"  [src]="photo.urls.regular" style="height:fit-content" id="photo" alt="{{photo.alt_description}}">
-  <div class="info">
+<div class="container-fluid">
+  <div class="d-grid mt-4 mb-2">
+    <button class="btn btn-outline-secondary" (click)="cargar()" type="button">Cargar nuevas fotos</button>
   </div>
+  
+  <div class="text-center" *ngIf="loading">
+    <div class="loader">Loading...</div>
+  </div>
+  <!--
+  <div class="masonry-container contenedor" *ngIf="!loading">
+    <img *ngFor="let photo of photos"  [src]="photo.urls.regular" style="height:fit-content" id="photo" alt="{{photo.alt_description}}">
+    <div class="info">
+    </div>
+  </div>
+  -->
+  
+  
+  <div class="masonry" *ngIf="!loading" >
+    <div *ngFor="let photo of photos">
+      <img class="num" [src]="photo.urls.regular" >
+    </div>
+  </div>  
 </div>
 
 
-<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'></div>
+
+
 
 
 <!-- 
