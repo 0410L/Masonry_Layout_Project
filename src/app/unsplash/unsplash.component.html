@@ -1,7 +1,10 @@
+
+<div class="d-grid gap-2 mt-4 mb-2 margen">
+  <button class="btn btn-outline-secondary btn-block" (click)="cargar()" type="button">Cargar nuevas fotos</button>
+</div>
+
 <div class="container-fluid">
-  <div class="d-grid mt-4 mb-2">
-    <button class="btn btn-outline-secondary" (click)="cargar()" type="button">Cargar nuevas fotos</button>
-  </div>
+  
   
   <div class="text-center" *ngIf="loading">
     <div class="loader">Loading...</div>
@@ -21,6 +24,7 @@
     </div>
   </div>  
 </div>
+
 
 
 

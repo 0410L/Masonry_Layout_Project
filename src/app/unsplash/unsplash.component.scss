@@ -6,9 +6,9 @@
 }
 
 
-.margen {
-    width: auto;
-}
+/*.margen {
+    height: 100vh;
+}*/
 
 button {
     font-size: medium;
@@ -51,6 +51,14 @@ img {
     //position: relative;
     
 }
+
+
+.btn{
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+
 
 img:hover {
     filter: saturate(250%);
@@ -128,14 +136,56 @@ img:hover {
    
   }
 
-  @media (max-width: 519px) {
+  @media (max-width: 699px) {
 
     .masonry {
-        --masonry-brick-width: 16vw;
+        --masonry-brick-width: 20vw;
     }
 
     img {
-        width: 16vw;
+        width: 22vw;
+    }
+
+   
+  }
+
+
+  @media (max-width: 650px) {
+
+    .masonry {
+        --masonry-brick-width: 15vw;
+    }
+
+    img {
+        width: 22vw;
+    }
+
+   
+  }
+
+
+
+  @media (max-width: 600px) {
+
+    .masonry {
+        --masonry-brick-width: 17vw;
+    }
+
+    img {
+        width: 28vw;
+    }
+
+   
+  }
+
+  @media (max-width: 520px) {
+
+    .masonry {
+        --masonry-brick-width: 17vw;
+    }
+
+    img {
+        width: 28vw;
     }
 
    
