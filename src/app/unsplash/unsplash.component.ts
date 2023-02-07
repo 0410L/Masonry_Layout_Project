@@ -17,7 +17,7 @@ export class UnsplashComponent implements OnInit {
   photos: any = [];
   page = 1;
   loading = true;
-photo: any;
+  photo: any;
 
 
   constructor(private unsplashService: UnsplashService) {}

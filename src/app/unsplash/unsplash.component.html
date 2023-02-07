@@ -8,9 +8,25 @@
   <div class="loader">Loading...</div>
 </div>
 
-<div class="masonry-container" *ngIf="!loading">
-  <img class="contenedor" *ngFor="let photo of photos" [src]="photo.urls.regular" id="photo" alt="{{photo.alt_description}}">
+<div class="masonry-container contenedor" *ngIf="!loading">
+  <img *ngFor="let photo of photos"  [src]="photo.urls.regular" style="height:fit-content" id="photo" alt="{{photo.alt_description}}">
   <div class="info">
-    <!--<span class="text-description">{{photo.alt_description}}</span>-->
   </div>
 </div>
+
+
+<div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'></div>
+
+
+<!-- 
+<div class="row masonry-container" *ngIf="!loading">
+  <div class="column contenedor">
+    <img class="contenedor" *ngFor="let photo of photos"  [src]="photo.urls.regular" style="height:fit-content" id="photo" alt="{{photo.alt_description}}">
+  </div>
+  <div class="column contenedor">
+    <img class="contenedor" *ngFor="let photo of photos"  [src]="photo.urls.regular" style="height:fit-content" id="photo" alt="{{photo.alt_description}}">
+  </div>
+  <div class="column contenedor">
+    <img class="contenedor" *ngFor="let photo of photos"  [src]="photo.urls.regular" style="height:fit-content" id="photo" alt="{{photo.alt_description}}">
+  </div>
+</div> -->

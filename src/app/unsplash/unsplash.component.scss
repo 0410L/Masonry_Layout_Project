@@ -16,29 +16,37 @@ button {
 
 
 .masonry-container {
-    display: flex;
+    //display: flex;
     flex-wrap: wrap;
     columns: 4;
+    row-gap: 4;
     width: auto;
-    height: 100vh;
+    height: auto;
     padding-bottom: 10px;
+    //grid-template-rows: masonry;
 }
 
+.contenedor {
+    display: inline-block;
+    width: 100%;
+  }
 
 
 img {
     //filter: opacity(.1);
     //z-index: -1;
-    //background-color: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 100%);
-    width: 150px;
+    background-color: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 310px;
     height: auto;
     object-fit: cover;
     flex-basis: calc(25% - 10px);
-    margin: 5px;
+    //margin: 10px;
+    margin-left: 10px;
+    margin-bottom: 28px;
     border-radius: 2%;
     justify-content: center;
     display: flex;
-    position: relative;
+    //position: relative;
     
 }
 
@@ -74,6 +82,11 @@ div.info {
         padding-left: 200px;
         padding-right: 200px;
     }
+
+    .contenedor {
+        display: inline-block;
+        width: 100%;
+      }
 }
 
 
@@ -82,6 +95,12 @@ div.info {
     img {
         flex-basis: calc(33.3333% - 10px);
     }
+
+    .contenedor {
+        display: inline-block none;
+        width: 0;
+      }
+    
 }
 
 
