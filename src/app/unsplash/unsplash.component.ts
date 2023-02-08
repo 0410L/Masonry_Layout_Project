@@ -1,14 +1,10 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { Observable, of } from 'rxjs';
 import { UnsplashService } from '../unsplash.service';
-import { Renderer2, ElementRef } from '@angular/core';
 
 
 
 @Component({
   selector: 'app-unsplash',
-  // template: 
-  //`<div *ngFor="let photo of photos"><img [src]="photo.urls.small"/></div>`,
   templateUrl: './unsplash.component.html',
   styleUrls: ['./unsplash.component.scss'],
   styles:[]
