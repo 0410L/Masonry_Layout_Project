@@ -21,8 +21,8 @@ button {
 
 
 img {
-  background-color: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 100%);
-  width: 24vw;
+  background-image: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 23.5vw;
   height: auto;
   object-fit: cover;
   border-radius: 2%;
@@ -48,22 +48,29 @@ h5{
 
   
 .text-description {
-  //background: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 100%);
+
+  background-image: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0,) 90%);
   justify-content: baseline;
-  bottom: 14px;
-  left: 30px;
+  bottom: 0vh;
+  left: 0vw;
   //color: white;
   text-shadow: 1px 1px 2px black;
   //background-color: rgba(255, 255, 255, 0.7);
+ 
   padding: 10px;
   position: absolute;
   font-size: 1.5vh;
 }
 
-.mascara {
-  background-color: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 50%);
+/* .mascara {
+  background-image: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 90%);
+  background-color: aqua;
   position: absolute;
  
+} */
+
+.oculto{
+  filter: opacity(.1);
 }
 
 
@@ -92,6 +99,8 @@ h5{
     
   }
 
+ 
+
   
   @media (max-width: 999px) {
 
@@ -104,8 +113,8 @@ h5{
     }
 
     .text-description {
-      bottom: 4px;
-      left: 10px;
+      bottom: 0vh;
+      left: 0vw;
     }
    
   }
@@ -121,12 +130,13 @@ h5{
       width: 21vw;
     }
     .text-description {
-      bottom: 5px;
-      left: 10px;
+      bottom: 0vh;
+      left: 0vw;
+      font-size: 1.2vh;
     }
 
     h5{
-      font-size: 1.7vh;
+      font-size: 1.5vh;
     }
   }
 
@@ -154,9 +164,12 @@ h5{
       width: 22vw;
     }
     .text-description {
-      bottom: 2px;
-      left: 10px;
+      bottom: 0vh;
+      left: 0vw;
+      
+      font-size: 1vh;
     }
+    
 
   }
 
@@ -172,6 +185,9 @@ h5{
       width: 28vw;
     }
 
+    h5{
+      font-size: 1.5vh;
+    }
     
 
   }
@@ -200,16 +216,20 @@ h5{
       width: 28vw;
     }
 
+    h5{
+      font-size: 1vh;
+    }
+
     .text-description {
-      bottom: 5px;
-      left: 10px;
+      bottom: 0vh;
+      left: 0vw;
     }
 
   }
 
 
 .masonry {
-  background-color: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 100%);
+
   --masonry-gap: 1rem;
   --masonry-brick-width: 20vw;
   column-gap: var(--masonry-gap);
@@ -224,8 +244,7 @@ h5{
   column-gap: var(--masonry-gap);
   column-fill: initial;
   column-width: var(--masonry-brick-width);
-  
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 
@@ -254,8 +273,9 @@ h5{
 }
 
 .masonry {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 
 
+//filter: opacity(.1);

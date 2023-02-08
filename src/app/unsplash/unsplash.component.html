@@ -17,7 +17,7 @@
   <div class="masonry" *ngIf="!loading" >
     <div *ngFor="let photo of photos">
       <img class="num" [src]="photo.urls.regular">
-      <div class="mascara"></div>
+      <div id="mascara"></div>
       <div class="text-description text-white"><h5 class="fw-bold">{{photo.alt_description}}</h5><span>{{photo.user.username}}</span></div>
     </div>
   </div>  
