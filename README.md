@@ -20,7 +20,6 @@ para inicializar el proyecto entrar en la terminal con el comando ' ng serve '  
 HTML5 | SCSS | ANGULAR 15.1.4 | NODE: v16.15.1 | BOOTSTRAP v.5.2
 
 
+## Acceso al proyecto
+[![CodeFactor](https://www.codefactor.io/repository/github/0410l/m_project/badge?s=9554678b0b0607f4505425794b7275b951c176a9)](https://www.codefactor.io/repository/github/0410l/m_project)
 
-
-Inlcuir la licéncia y el link a esta
-[MIT](https://opensource.org/licenses/MIT)
