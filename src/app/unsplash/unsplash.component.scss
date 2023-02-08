@@ -1,166 +1,163 @@
 *{
-    //font-family: 'Roboto', sans-serif;
-    font-family: 'Rubik', sans-serif;
-    justify-content: center;
-    align-items: center;
+  font-family: 'Rubik', sans-serif;
+  justify-content: center;
+  align-items: center;
 }
 
 
-/*.margen {
-    height: 100vh;
-}*/
+.margen {
+  padding: 16px;
+}
 
 button {
-    font-size: medium;
+  font-size: medium;
 }
 
 
-
-
-/* .masonry-container {
-    //display: flex;
-    flex-wrap: wrap;
-    //columns: 3;
-    row-gap: 4;
-    width: auto;
-    height: auto;
-    //padding-bottom: 10px;
-    //grid-template-rows: masonry;
-} */
-
 .contenedor {
-    display: inline-block;
-    width: 100%;
-  }
+  display: inline-block;
+  width: 100%;
+}
 
 
 img {
-    //filter: opacity(.1);
-    //z-index: -1;
-    background-color: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 100%);
-    width: 24vw;
-    height: auto;
-    object-fit: cover;
-    //cxflex-basis: calc(25% - 10px);
-    //margin: 10px;
-   /*  margin-left: 10px;
-    margin-bottom: 28px;*/
-    border-radius: 2%;
-    justify-content: center;
-    display: flex;
-    //position: relative;
-    
+  background-color: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 24vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 2%;
+  justify-content: center;
+  display: flex;
+  //box-shadow: 3px 3px;
 }
 
 
-.btn{
-    margin-left: 20vh;
-    margin-right: 20vh;
-}
-
+//.btn{
+  //margin-left: 20vh;
+  //margin-right: 20vh;
+//}
 
 
 img:hover {
-    filter: saturate(250%);
+  filter: saturate(250%);
 } 
 
-
-/* div.info {
-  
-  color: white;
-  background: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 100%);
-
-} */
-
+h5{
+  font-size: 2vh;
+}
 
   
 .text-description {
-    //z-index: -1;
-    top: 600px;
-    left: 20px;
-    //background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px;
-    position: absolute;
-  }
+  //background: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 100%);
+  justify-content: baseline;
+  bottom: 14px;
+  left: 30px;
+  //color: white;
+  text-shadow: 1px 1px 2px black;
+  //background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  position: absolute;
+  font-size: 1.5vh;
+}
 
+.mascara {
+  background-color: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 50%);
+  position: absolute;
+ 
+}
 
 
   @media (max-width: 1740px) {
 
     .masonry {
-        --masonry-brick-width: 22vw;
+      --masonry-brick-width: 22vw;
     }
 
     img {
-        width: 23vw;
+      width: 23vw;
     }
-   
+  
   }
 
   @media (max-width: 1264px) {
 
     .masonry {
-        --masonry-brick-width: 22vw;
+      --masonry-brick-width: 22vw;
     }
 
     img {
-        width: 23vw;
+      width: 23vw;
     }
-   
+
+    
   }
 
   
   @media (max-width: 999px) {
 
     .masonry {
-        --masonry-brick-width: 21vw;
+      --masonry-brick-width: 21vw;
     }
 
     img {
-        width: 22vw;
+      width: 22vw;
     }
 
+    .text-description {
+      bottom: 4px;
+      left: 10px;
+    }
    
   }
+
 
   @media (max-width: 700px) {
 
     .masonry {
-        --masonry-brick-width: 20vw;
+      --masonry-brick-width: 20vw;
     }
 
     img {
-        width: 21vw;
+      width: 21vw;
+    }
+    .text-description {
+      bottom: 5px;
+      left: 10px;
     }
 
-   
+    h5{
+      font-size: 1.7vh;
+    }
   }
+
 
   @media (max-width: 699px) {
 
     .masonry {
-        --masonry-brick-width: 20vw;
+      --masonry-brick-width: 20vw;
     }
 
     img {
-        width: 22vw;
+      width: 22vw;
     }
 
-   
   }
 
 
   @media (max-width: 650px) {
 
     .masonry {
-        --masonry-brick-width: 15vw;
+      --masonry-brick-width: 15vw;
     }
 
     img {
-        width: 22vw;
+      width: 22vw;
+    }
+    .text-description {
+      bottom: 2px;
+      left: 10px;
     }
 
-   
   }
 
 
@@ -168,131 +165,97 @@ img:hover {
   @media (max-width: 600px) {
 
     .masonry {
-        --masonry-brick-width: 17vw;
+      --masonry-brick-width: 17vw;
     }
 
     img {
-        width: 28vw;
+      width: 28vw;
     }
 
-   
+    
+
   }
+
 
   @media (max-width: 520px) {
 
     .masonry {
-        --masonry-brick-width: 17vw;
+      --masonry-brick-width: 17vw;
     }
 
     img {
-        width: 28vw;
+      width: 28vw;
     }
 
-   
   }
 
 
   @media (max-width: 516px) {
 
     .masonry {
-        --masonry-brick-width: 17vw;
+      --masonry-brick-width: 17vw;
     }
 
     img {
-        width: 28vw;
+      width: 28vw;
     }
 
-   
+    .text-description {
+      bottom: 5px;
+      left: 10px;
+    }
+
   }
-
-
-
-/* 
-@media (max-width: 1920px) {
-    masonry-container {
-        justify-content: center;
-        padding-left: 200px;
-        padding-right: 200px;
-    }
-
-    .contenedor {
-        display: inline-block;
-        width: 100%;
-      }
-}
-
-
-
-@media (max-width: 1200px) {
-    img {
-        flex-basis: calc(33.3333% - 10px);
-    }
-
-    .contenedor {
-        display: inline-block none;
-        width: 0;
-      }
-    
-}
-
-
-
-
-@media (max-width: 900px) {
-    img {
-        flex-basis: calc(50% - 10px);
-    }
-}
-
-
-
-@media (max-width: 659px) {
-    img {
-        flex-basis: calc(100% - 10px);
-    }
-}
- */
-
-
-
 
 
 .masonry {
-    background-color: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 100%);
-    --masonry-gap: 1rem;
-    --masonry-brick-width: 20vw;
-    column-gap: var(--masonry-gap);
-    column-fill: initial;
-    column-width: var(--masonry-brick-width);
-  }
+  background-color: linear-gradient(0deg, rgb(6 6 6) 0%, rgba(0, 0, 0, 0) 100%);
+  --masonry-gap: 1rem;
+  --masonry-brick-width: 20vw;
+  column-gap: var(--masonry-gap);
+  column-fill: initial;
+  column-width: var(--masonry-brick-width);
+}
+
+.masonry2 {
+
+  --masonry-gap: 1rem;
+  --masonry-brick-width: 20vw;
+  column-gap: var(--masonry-gap);
+  column-fill: initial;
+  column-width: var(--masonry-brick-width);
   
-  .masonry > * {
-    break-inside: avoid;
-    margin-bottom: var(--masonry-gap);
-  }
+  padding: 0.5rem;
+}
+
+
+.masonry > * {
+  break-inside: avoid;
+  margin-bottom: var(--masonry-gap);
+  position: relative;
+}
   
-  @supports (grid-template-rows: masonry) {
-    .masonry {
-      display: grid;
-      gap: var(--masonry-gap);
-      grid-template-rows: masonry;
-      grid-template-columns: repeat(
-        auto-fill,
-        minmax(var(--masonry-brick-width), 1fr)
-      );
-      align-tracks: stretch;
-    }
-  
-    .masonry > * {
-      margin-bottom: initial;
-    }
-  }
-  
-  /* some styling not important */
+
+@supports (grid-template-rows: masonry) {
   .masonry {
-    /*background: #f3f3f3;*/
-    padding: 1rem;
+    display: grid;
+    gap: var(--masonry-gap);
+    grid-template-rows: masonry;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--masonry-brick-width), 1fr)
+    );
+    align-tracks: stretch;
   }
+
+  .masonry > * {
+    margin-bottom: initial;
+  }
+}
+
+.masonry {
+  padding: 0.5rem;
+}
 
 
 
