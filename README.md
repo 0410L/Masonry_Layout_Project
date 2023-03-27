@@ -4,7 +4,7 @@
 Creación de una aplicación que consume la API de https://unsplash.com/ para cargar y visualizar una raid de imágenes y las ordena en un estilo 'Masonry layout'.
 
 ## Deploy (Demostración)
-url: https://m-project-j4ez.vercel.app/main
+url: https://m-project-j4ez.vercel.app/
 
 ## Usabilidad
 La gestión de la app se nutre de un servicio propio para la API de https://unsplash.com/ (en el que anteriormente tienes que solicitar una key personal para usar la API)
